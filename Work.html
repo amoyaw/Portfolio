@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3a0ca3;
+      --accent-color: #f72585;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: var(--secondary-color);
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      margin: 0.8rem auto;
+      border-radius: 2px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h3, .project-card h2 {
+      margin: 1rem;
+      color: var(--primary-color);
+    }
+
+    .project-card p {
+      margin: 0 1rem 1.5rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="Work.html"><i class="fas fa-briefcase"></i> Work</a></li>
+      <li><a href="Skills.html"><i class="fas fa-tools"></i> Skills</a></li>
+      <li><a href="Experience.html"><i class="fas fa-chart-line"></i> Experience</a></li>
+      <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Work</h1>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="c:\Users\AMOYAW\Desktop\Portfolio\imgs\imgthree.jpg" alt="Tyler Cover">
+        <h3>breeze</h3>
+        <p>Album Cover Alt</p>
+      </div>
+      
+
+      <div class="projects-grid">
+      <div class="project-card">
+        <img src="c:\Users\AMOYAW\Desktop\Portfolio\imgs\imgsix.jpg" alt="Stuck In The Middle">
+        <h3>Stuck In The Middle</h3>
+        <p>Hazy</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="c:\Users\AMOYAW\Desktop\Portfolio\imgs\imgtwo.jpg" alt="Chance">
+          <h3>MSL</h3>
+          <p>Praise</p>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="c:\Users\AMOYAW\Desktop\Portfolio\imgs\imgfour.jpg" alt="Express">
+            <h3>None</h3>
+            <p>Freedom</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="c:\Users\AMOYAW\Desktop\Portfolio\imgs\imgseven.jpg" alt="Travel">
+        <h3>Out</h3>
+        <p>Sense</p>
+</div>
+
+
+
+
+    <p style="text-align:center; margin-top:2rem; color:#555;">...and many more.</p>
+  </div>
+
+</body>
+</html>

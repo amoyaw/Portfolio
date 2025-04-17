@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3a0ca3;
+      --accent-color: #f72585;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    body::before {
+      top: -50px;
+      right: -50px;
+      width: 300px;
+      height: 300px;
+      background: rgba(67, 97, 238, 0.1);
+    }
+
+    body::after {
+      bottom: -100px;
+      left: -100px;
+      width: 500px;
+      height: 500px;
+      background: rgba(247, 37, 133, 0.08);
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      color: var(--secondary-color);
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      margin: 0.8rem auto;
+      border-radius: 2px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.95);
+      border-color: rgba(67, 97, 238, 0.2);
+    }
+
+    .skill-card i {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-card span {
+      display: block;
+      font-weight: 500;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="Work.html"><i class="fas fa-briefcase"></i> Work</a></li>
+      <li><a href="Skills.html"><i class="fas fa-tools"></i> Skills</a></li>
+      <li><a href="Experience.html"><i class="fas fa-chart-line"></i> Experience</a></li>
+      <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+    <div class="container">
+      <h1>Digital Art Skills</h1>
+    
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-paint-brush"></i>
+          <span>Digital Painting</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-adobe"></i>
+          <span>Adobe Photoshop</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-adobe"></i>
+          <span>Adobe Illustrator</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-vector-square"></i>
+          <span>Vector Art</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-pen-nib"></i>
+          <span>Graphic Design</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tablet-alt"></i>
+          <span>Tablet Illustration</span>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+</html>
